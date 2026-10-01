@@ -1,0 +1,15 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5vw;
+}
+img {
+    width: 30%;
+}
+.grid-item img {
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    height: 20vw;
+    object-fit: cover;
+}

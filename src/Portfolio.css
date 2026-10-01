@@ -1,0 +1,72 @@
+.portfolio-wrapper {
+    min-height: 100vh;
+}
+.portfolio-heading {
+  font-size: 6rem;
+  line-height: 0.9;
+  font-family: 'PicNic';
+  color: #E7388A;
+  position: absolute;
+  transform: translateY(57vh);
+  justify-self: right;
+  margin-right: 5vw;
+}
+.card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: flex-start;
+}
+.card {
+
+  width: auto;
+  display: flex;
+  flex-direction: column;
+}
+.card-number {
+    font-size: 1rem;
+    color: #E7388A;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 0;
+}
+
+.card-image1 {
+    width: 15vw;
+    height: 17vw;
+    background-color: grey;
+}
+.card-image2 {
+    width: 15vw;
+    height: 23vw;
+    background-color: grey;
+}
+.card-image3 {
+    width: 14vw;
+    height: 14vw;
+    background-color: grey;
+}
+.card-image4 {
+    width: 15vw;
+    height: 20vw;
+    background-color: grey;
+}
+.card-image5 {
+    width: 16vw;
+    height: 16vw;
+    background-color: grey;
+}
+.card-title {
+    font-size: 1rem;
+    color: #E7388A;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: right;
+    margin-bottom: 0;
+}
+
+.card-subtitle {
+    font-size: 0.7rem;
+    color: #E7388A;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: right;
+    margin-top: 0;
+}
