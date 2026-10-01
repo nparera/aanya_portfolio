@@ -12,11 +12,6 @@ const images = [
     alt: "Artwork 1",
     caption: "Short caption for artwork 1",
   },
-//   {
-//     src: img2,
-//     alt: "Artwork 2",
-//     caption: "Short caption for artwork 2",
-//   },
   {
     src: img3,
     alt: "Artwork 3",
