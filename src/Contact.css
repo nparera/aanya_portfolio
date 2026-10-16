@@ -1,28 +1,33 @@
 .contact-wrapper {
-  height: 100vh;
-  width: 100vw;
-  position: relative;
-  background-color: #E7388A;
+  min-height: calc(100svh - var(--nav-height));
+  width: 100%;
+  padding: var(--section-padding) var(--page-padding);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 2rem;
+
+  background-color: var(--color-pink);
 }
 
-
 .contact-title {
-  position: absolute;
-  font-size: 7rem;
-  line-height: 0.9;
-  font-family: Picnic;
-  color: #FAF9F6;
-  bottom: 10vh;
+  margin: 0;
+
+  color: var(--color-background);
+  font-family: var(--font-display);
+  font-size: var(--heading-size);
+  line-height: 1;
 }
 
 .info-contact {
-  position: absolute;
-  color: #FAF9F6;
-  font-family: Arial, Helvetica, sans-serif;
+  position: static;
+
+  color: var(--color-background);
+  font-family: var(--font-body);
   font-size: 1rem;
-  bottom: 5vh;
-  left: 10vh;
 }
+
 #email a,
 #ig a {
   color: #FAF9F6;

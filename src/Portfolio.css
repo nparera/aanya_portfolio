@@ -1,21 +1,21 @@
 .portfolio-wrapper {
-    min-height: 100vh;
+  min-height: calc(100svh - var(--nav-height));
+  padding: var(--section-padding) var(--page-padding);
 }
+
 .portfolio-heading {
-  font-size: 6rem;
-  line-height: 0.9;
-  font-family: 'PicNic';
-  color: #E7388A;
-  position: absolute;
-  transform: translateY(57vh);
-  justify-self: right;
-  margin-right: 5vw;
+  margin: 0 0 3rem;
+  color: var(--color-pink);
+  font-family: var(--font-display);
+  font-size: var(--heading-size);
+  line-height: 1;
 }
 .card-wrapper {
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
     align-items: flex-start;
+    width: 100%;
 }
 .card {
 
@@ -26,7 +26,6 @@
 .card-number {
     font-size: 1rem;
     color: #E7388A;
-    font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 0;
 }
 

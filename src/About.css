@@ -1,19 +1,12 @@
-:root {
-  --nav-h: 60px;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  padding-top: var(--nav-h);
+.about-wrapper {
+  min-height: calc(100svh - var(--nav-height));
+  padding: var(--section-padding) var(--page-padding);
 }
 
 .about-title {
-  color: #E7388A;
-}
-
-.about-wrapper {
-  min-height: 100vh;
+  margin: 0;
+  color: var(--color-pink);
+  font-family: var(--font-display);
+  font-size: var(--heading-size);
+  line-height: 1;
 }
