@@ -5,11 +5,12 @@ import heroImg from './assets/img1.jpg'
 import Portfolio from './Portfolio';
 import About from './About';
 import Contact from './Contact';
+import { useLocation } from 'react-router-dom'
 
 
 function App() {
   const [isHeroVisible, setIsHeroVisible] = useState(true);
-
+  const location = useLocation()
   useEffect(() => {
 
       const heroSection = document.getElementById("hero");
@@ -37,6 +38,18 @@ function App() {
       return () => observer.disconnect();
 
     }, []);
+    useEffect(() => {
+      const sectionId = location.state?.scrollTo
+
+      if (sectionId) {
+        requestAnimationFrame(() => {
+          document.getElementById(sectionId)?.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start',
+          })
+        })
+      }
+    }, [location.state])
   return (
     <>
       <Nav isHeroVisible={isHeroVisible}></Nav>

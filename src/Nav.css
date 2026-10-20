@@ -46,6 +46,13 @@
 
   transition: opacity 0.2s ease;
 }
+.nav-link,
+.mobile-link {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
 
 .nav-link:hover {
   opacity: 0.6;

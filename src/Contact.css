@@ -11,14 +11,7 @@
   background-color: var(--color-pink);
 }
 
-.contact-title {
-  margin: 0;
 
-  color: var(--color-background);
-  font-family: var(--font-display);
-  font-size: var(--heading-size);
-  line-height: 1;
-}
 
 .info-contact {
   position: static;

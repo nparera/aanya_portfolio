@@ -1,0 +1,148 @@
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: grid;
+  place-items: center;
+  padding: 2rem;
+  background: rgb(255 255 255 / 90%);
+}
+
+.artwork-modal {
+  position: relative;
+  width: min(1180px, 94vw);
+  max-height: 94vh;
+  overflow-y: auto;
+  padding: clamp(3rem, 6vw, 5rem);
+  border-radius: 20px;
+  background: var(--color-pink);
+  color: white;
+}
+
+.modal-close {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.5rem;
+  z-index: 2;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: white;
+  font-family: Arial, sans-serif;
+  font-size: 3.5rem;
+  font-weight: bold;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.modal-image-wrapper {
+  display: grid;
+  place-items: center;
+  width: min(900px, 90%);
+  min-height: 400px;
+  margin: 0 auto;
+  background: #d9d9d9;
+}
+
+.modal-cover {
+  display: block;
+  width: 100%;
+  max-height: 600px;
+  object-fit: contain;
+}
+
+.modal-content {
+  width: min(900px, 90%);
+  margin: 0 auto;
+}
+
+.artwork-information {
+  margin-top: 4rem;
+}
+
+.artwork-information h2,
+.artwork-information p {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 1.15rem;
+  font-weight: normal;
+}
+
+.artwork-collection {
+  font-style: italic;
+}
+
+.artwork-extra {
+  margin-top: 0.4rem !important;
+  font-size: 0.9rem !important;
+}
+
+.artwork-about {
+  margin-top: 5rem;
+}
+
+.artwork-about h3 {
+  margin: 0 0 1rem;
+  font-family: Arial, sans-serif;
+  font-size: 1.15rem;
+  font-weight: normal;
+}
+
+.artwork-about p {
+  max-width: 700px;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+
+.detail-images {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 4rem;
+}
+
+.detail-images img {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 700px) {
+  .modal-backdrop {
+    padding: 0.75rem;
+  }
+
+  .artwork-modal {
+    width: 100%;
+    max-height: 96vh;
+    padding: 4rem 1.5rem 2.5rem;
+    border-radius: 14px;
+  }
+
+  .modal-close {
+    top: 0.75rem;
+    right: 1rem;
+    font-size: 3rem;
+  }
+
+  .modal-image-wrapper,
+  .modal-content {
+    width: 100%;
+  }
+
+  .modal-image-wrapper {
+    min-height: 250px;
+  }
+
+  .artwork-information {
+    margin-top: 2rem;
+  }
+
+  .artwork-about {
+    margin-top: 3rem;
+  }
+
+  .detail-images {
+    grid-template-columns: 1fr;
+  }
+}

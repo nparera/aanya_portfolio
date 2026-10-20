@@ -4,7 +4,7 @@ export default function Contact() {
     return(
         <div className='contact-wrapper'>
             <div className='left'>
-                <h1 className='contact-title'>contact</h1>
+                <h2 className='section-heading section-heading--contact'>CONTACT</h2>
             </div>
             <div className='info-contact'>
                 <p id='email'>email:
