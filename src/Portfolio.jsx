@@ -5,7 +5,7 @@ export default function Portfolio() {
 
     return(
         <div className='portfolio-wrapper'>
-            <h2 className='section-heading'>PORTFOLIO</h2>
+            <h2 className='section-heading'>Portfolio</h2>
             <div className='card-wrapper'>
                 <Link to="/portfolio/works" className='card'>
                     <p className='card-number'>01</p>
