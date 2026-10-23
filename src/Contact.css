@@ -6,23 +6,32 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  gap: 2rem;
+  align-items: flex-start;
+  gap: 1.5rem;
 
   background-color: var(--color-pink);
 }
 
-
+.contact-wrapper .section-heading--contact {
+  position: static;
+  inset: auto;
+  margin: 0;
+  color: var(--color-background);
+  text-align: left;
+}
 
 .info-contact {
-  position: static;
-
   color: var(--color-background);
   font-family: var(--font-body);
   font-size: 1rem;
 }
 
+.info-contact p {
+  margin: 0.4rem 0;
+}
+
 #email a,
 #ig a {
-  color: #FAF9F6;
   padding-left: 1vh;
+  color: var(--color-background);
 }
